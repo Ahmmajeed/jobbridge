@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ job.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>{{ job.title }}</h1>
+    <h3>{{ job.company }}</h3>
+    <p><strong>Location:</strong> {{ job.location }}</p>
+    <p><strong>Salary:</strong> {{ job.salary }}</p>
+    <p>{{ job.description }}</p>
+
+    <p>
+        <a href="{% url 'jobs:apply_job' job.id %}" class="btn btn-primary">Apply Now</a>
+    </p>
+
+    <form method="post" action="{% url 'jobs:save_job' job.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-secondary">
+            {% if saved %}Saved{% else %}Save Job{% endif %}
+        </button>
+    </form>
+</div>
+</body>
+</html>
