@@ -3,126 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HireHub</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>JobBridge - Find Your Dream Job Today</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">JobBridge</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="jobs.html" class="nav-link">Jobs</a></li>
+                <li><a href="login.html" class="nav-link btn-outline">Login</a></li>
+                <li><a href="register.html" class="nav-link btn-primary">Register</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Navigation -->
-   <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ms-auto me-4">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-        </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="jobs.html">Jobs</a>
-        </li>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1 class="hero-title">Find Your Dream Job Today</h1>
+            <p class="hero-subtitle">
+                Discover thousands of opportunities from top employers. JobBridge connects talented professionals 
+                with leading companies worldwide. Start your career journey with us today.
+            </p>
+            <div class="hero-buttons">
+                <a href="jobs.html" class="btn btn-primary">Find a Job</a>
+                <a href="employer-dashboard.html" class="btn btn-outline">Post a Job</a>
+            </div>
+        </div>
+    </section>
 
-        <li class="nav-item">
-            <a class="nav-link" href="#">Companies</a>
-        </li>
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <div class="stat-number">10,000+</div>
+                <div class="stat-label">Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25,000+</div>
+                <div class="stat-label">Candidates</div>
+            </div>
+        </div>
+    </section>
 
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-    </ul>
-
-    <a href="login.html" class="btn btn-outline-light me-2">Login</a>
-    <a href="register.html" class="btn btn-primary">Register</a>
-</div>
-
-    <!-- Hero -->
-    <section class="py-5 text-center">
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs">
         <div class="container">
-            <h1>Find Your Dream Job</h1>
-            <p>Search thousands of opportunities from top employers.</p>
-
-            <div class="row justify-content-center mt-4">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Job title or keyword">
+            <h2 class="section-title">Featured Jobs</h2>
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/2563eb/ffffff?text=T" alt="Tech Corp logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">Frontend Developer</h3>
+                            <p class="company-name">Tech Corp</p>
+                        </div>
+                    </div>
+                    <p class="job-location">San Francisco, CA &bull; <span class="job-type">Full-time</span></p>
+                    <p class="job-salary">$90,000 - $120,000</p>
+                    <p class="job-description">
+                        Build responsive web applications using React and modern JavaScript frameworks. 
+                        Collaborate with designers to create seamless user experiences.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
                 </div>
 
-                <div class="col-md-2">
-                    <button class="btn btn-primary w-100">
-                        Search
-                    </button>
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/1e293b/ffffff?text=C" alt="Cloud Solutions Inc logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">Backend Developer</h3>
+                            <p class="company-name">Cloud Solutions Inc</p>
+                        </div>
+                    </div>
+                    <p class="job-location">Remote &bull; <span class="job-type">Remote</span></p>
+                    <p class="job-salary">$110,000 - $140,000</p>
+                    <p class="job-description">
+                        Design and implement scalable backend services using Python and Django. 
+                        Work with cloud infrastructure and databases.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/ec4899/ffffff?text=C" alt="Creative Studio logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">UI/UX Designer</h3>
+                            <p class="company-name">Creative Studio</p>
+                        </div>
+                    </div>
+                    <p class="job-location">New York, NY &bull; <span class="job-type">Contract</span></p>
+                    <p class="job-salary">$70,000 - $90,000</p>
+                    <p class="job-description">
+                        Create intuitive user interfaces and exceptional user experiences. 
+                        Lead design projects from concept to implementation.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/f97316/ffffff?text=I" alt="Innovate Co logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">Product Manager</h3>
+                            <p class="company-name">Innovate Co</p>
+                        </div>
+                    </div>
+                    <p class="job-location">Austin, TX &bull; <span class="job-type">Full-time</span></p>
+                    <p class="job-salary">$130,000 - $160,000</p>
+                    <p class="job-description">
+                        Lead product strategy and roadmap. Work with cross-functional teams 
+                        to deliver impactful products to market.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/14b8a6/ffffff?text=T" alt="Tech Systems LLC logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">DevOps Engineer</h3>
+                            <p class="company-name">Tech Systems LLC</p>
+                        </div>
+                    </div>
+                    <p class="job-location">Seattle, WA &bull; <span class="job-type">Full-time</span></p>
+                    <p class="job-salary">$120,000 - $150,000</p>
+                    <p class="job-description">
+                        Manage cloud infrastructure and CI/CD pipelines. Ensure system reliability 
+                        and scalability for enterprise applications.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-card-top">
+                        <img src="https://placehold.co/50x50/8b5cf6/ffffff?text=A" alt="Analytics Pro logo" class="company-logo">
+                        <div>
+                            <h3 class="job-title">Data Scientist</h3>
+                            <p class="company-name">Analytics Pro</p>
+                        </div>
+                    </div>
+                    <p class="job-location">Remote &bull; <span class="job-type">Remote</span></p>
+                    <p class="job-salary">$140,000 - $180,000</p>
+                    <p class="job-description">
+                        Analyze complex data sets and build predictive models. Drive data-driven 
+                        decisions for business growth.
+                    </p>
+                    <a href="job-details.html" class="btn btn-primary btn-sm">View Job</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Jobs -->
-    <section class="container py-5">
-        <h2 class="mb-4">Featured Jobs</h2>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Frontend Developer</h5>
-                    <p>Tech Company</p>
-                    <a href="job-details.html" class="btn btn-primary">
-                        View Job
-                    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">JobBridge</h3>
+                    <p class="footer-description">
+                        Connecting talent with opportunity. Your next career move is just a click away.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Employers</h4>
+                    <ul>
+                        <li><a href="employer-dashboard.html">Post a Job</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Backend Developer</h5>
-                    <p>Software Firm</p>
-                    <a href="job-details.html" class="btn btn-primary">
-                        View Job
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JobBridge. All rights reserved.</p>
             </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>UI/UX Designer</h5>
-                    <p>Creative Agency</p>
-                    <a href="job-details.html" class="btn btn-primary">
-                        View Job
-                    </a>
-                </div>
-            </div>
-
         </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="container py-5">
-        <div class="row text-center">
-
-            <div class="col-md-4">
-                <h2>10,000+</h2>
-                <p>Jobs Posted</p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>5,000+</h2>
-                <p>Companies</p>
-            </div>
-
-            <div class="col-md-4">
-                <h2>50,000+</h2>
-                <p>Job Seekers</p>
-            </div>
-
-        </div>
-    </section>
-
-    <script src="js/main.js"></script>
-
-    <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">
-            © 2026 JobBridge. All rights reserved.
-        </p>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -83,8 +83,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASES = {
-    "default": dj_database_url.config(default=os.environ.get("DATABASE_URL")),
+DATABASES = DATABASES = {
+    "default": dj_database_url.config(
+        default="postgresql://jobbridge_db_user:EKLQsz74AsQ7UWtN0ZIQZEkg3fcH9Yyl@dpg-d8t8hhmrnols73aa24cg-a.virginia-postgres.render.com/jobbridge_db"
+    ),
 }
 
 
